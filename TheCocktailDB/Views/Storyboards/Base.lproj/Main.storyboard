@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cocktail View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CocktailViewController" customModule="TheCocktailDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Type cocktail name..." translatesAutoresizingMaskIntoConstraints="NO" id="meJ-wP-pO6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V2e-rX-K2u">
+                                <rect key="frame" x="20" y="313" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V2e-rX-K2u" secondAttribute="height" multiplier="1:1" id="1EN-6d-o9w"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dLu-JD-fNH">
+                                <rect key="frame" x="31" y="135" width="352" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-xi-Xf8">
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="50"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOb-yK-Ild">
+                                        <rect key="frame" x="0.0" y="65" width="352" height="50"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftK-lA-emN">
+                                        <rect key="frame" x="0.0" y="130" width="352" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.86087566614151001" green="0.82710127438027048" blue="0.77463112805031287" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="meJ-wP-pO6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E64-HL-vol"/>
+                            <constraint firstItem="dLu-JD-fNH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IoK-vg-QxK"/>
+                            <constraint firstItem="V2e-rX-K2u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="La9-ST-vDm"/>
+                            <constraint firstItem="dLu-JD-fNH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="Pkn-tw-9h4"/>
+                            <constraint firstItem="V2e-rX-K2u" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="SlH-9Y-CUl"/>
+                            <constraint firstItem="V2e-rX-K2u" firstAttribute="top" secondItem="dLu-JD-fNH" secondAttribute="bottom" constant="48" id="YBw-jY-V5f"/>
+                            <constraint firstItem="meJ-wP-pO6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ci9-Mp-AIT"/>
+                            <constraint firstItem="dLu-JD-fNH" firstAttribute="top" secondItem="meJ-wP-pO6" secondAttribute="bottom" constant="40" id="fVs-91-xld"/>
+                            <constraint firstItem="meJ-wP-pO6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kR2-3B-XYE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drinkCategoryLabel" destination="zOb-yK-Ild" id="5gh-od-esG"/>
+                        <outlet property="drinkImage" destination="V2e-rX-K2u" id="hvz-W5-bvL"/>
+                        <outlet property="drinkInstructions" destination="ftK-lA-emN" id="sn1-jM-8Xq"/>
+                        <outlet property="drinkNameLabel" destination="CQg-xi-Xf8" id="xMQ-Oi-h6P"/>
+                        <outlet property="drinkSearchBar" destination="meJ-wP-pO6" id="sLN-3a-k28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+</document>
